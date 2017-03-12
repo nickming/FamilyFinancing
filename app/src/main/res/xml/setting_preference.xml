@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <PreferenceCategory android:title="基本设置">
+
+        <SwitchPreference
+            android:key="night_mode"
+            android:summary=""
+            android:title="夜间模式">
+
+        </SwitchPreference>
+
+        <SwitchPreference
+            android:key="gesture_password"
+            android:title="手势密码">
+
+        </SwitchPreference>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="数据">
+
+        <Preference
+            android:key="budget_setting"
+            android:title="预算设置"
+            android:summary="设定当月的预算">
+        </Preference>
+
+        <Preference
+            android:key="clear_all_data"
+            android:summary="删除已存在的账本以及所有的数据"
+            android:title="清空数据" />
+        <Preference
+            android:key="clear_cache"
+            android:summary="删除应用缓存的数据"
+            android:title="清空缓存" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="其它">
+        <Preference
+            android:summary="V1.0"
+            android:title="当前版本">
+
+        </Preference>
+
+        <Preference
+            android:summary="962570483@qq.com"
+            android:title="Nickming">
+
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

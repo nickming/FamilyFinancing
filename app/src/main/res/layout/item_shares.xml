@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:id="@+id/tv_shares_symbol"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+            <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/tv_shares_name"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+            <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:layout_weight="1"
+                android:id="@+id/tv_shares_ticktime"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="180dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="最新价"
+                    android:textColor="@color/primary_text_color"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="涨跌额"
+                    android:textColor="@color/primary_text_color"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="涨跌幅"
+                    android:textColor="@color/primary_text_color"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="成交量"
+                    android:textColor="@color/primary_text_color"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_shares_trade"
+                    android:gravity="center"
+                    android:textColor="@color/primary_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_shares_pricechange"
+                    android:gravity="center"
+                    android:textColor="@color/primary_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_shares_changepercent"
+                    android:gravity="center"
+                    android:textColor="@color/primary_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_shares_volume"
+                    android:gravity="center"
+                    android:textColor="@color/primary_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="买入"
+                    android:textColor="@color/primary_text_color"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="卖出"
+                    android:textColor="@color/primary_text_color"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="昨收"
+                    android:textColor="@color/primary_text_color"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="今开"
+                    android:textColor="@color/primary_text_color"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_shares_buy"
+                    android:gravity="center"
+                    android:textColor="@color/primary_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_shares_sell"
+                    android:gravity="center"
+                    android:textColor="@color/primary_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_shares_settlement"
+                    android:gravity="center"
+                    android:textColor="@color/primary_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_shares_open"
+                    android:gravity="center"
+                    android:textColor="@color/primary_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="最高"
+                    android:textColor="@color/primary_text_color"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="最低"
+                    android:textColor="@color/primary_text_color"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="成交额"
+                    android:textColor="@color/primary_text_color"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/primary_text_color"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_shares_high"
+                    android:gravity="center"
+                    android:textColor="@color/primary_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_shares_low"
+                    android:gravity="center"
+                    android:textColor="@color/primary_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_shares_amount"
+                    android:gravity="center"
+                    android:textColor="@color/primary_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/primary_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

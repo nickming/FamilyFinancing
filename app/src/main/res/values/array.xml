@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="account_book_selection">
+        <item>删除</item>
+    </array>
+
+    <array name="shares_type">
+        <item>深圳股市</item>
+        <item>沪股市</item>
+    </array>
+
+    <array name="chart_list">
+        <item>消费类型统计</item>
+        <item>支付渠道统计</item>
+    </array>
+</resources>

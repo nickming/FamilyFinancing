@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:id="@+id/rl_financing_item_icon_container"
+                android:layout_width="@dimen/toolbar_icon_size"
+                android:layout_height="@dimen/toolbar_icon_size">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/toolbar_icon_size"
+                    android:src="@color/icon_amber"
+                    android:layout_height="@dimen/toolbar_icon_size"
+                    android:id="@+id/iv_financing_item_type_background"/>
+
+                <ImageView
+                    android:id="@+id/iv_financing_item_type_icon"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/record_type_item_icon_width"
+                    android:src="@mipmap/ic_books"
+                    android:layout_height="@dimen/record_type_item_icon_width" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:textColor="@color/primary_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="323"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/rl_financing_item_icon_container"
+                android:id="@+id/tv_financing_item_type"/>
+
+            <TextView
+                android:id="@+id/tv_financing_item_money"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/large_text_size"
+                android:text="323"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text_color"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

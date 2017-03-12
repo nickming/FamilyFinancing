@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.NoTitleBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="patternViewStyle">@style/PatternView</item>
+    </style>
+
+    <style name="WindowAnimationFadeInOut">
+        <item name="@android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="@android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="AppTheme.NoTitleBar.DayNight" parent="Theme.AppCompat.DayNight">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+
+    <declare-styleable name="PatternView">
+        <!-- Defines the aspect to use when drawing PatternView. -->
+        <attr name="pl_aspect">
+            <!-- Square; the default value. -->
+            <enum name="square" value="0" />
+            <enum name="lock_width" value="1" />
+            <enum name="lock_height" value="2" />
+        </attr>
+        <!-- Defines the regular pattern color. -->
+        <attr name="pl_regularColor" format="color|reference" />
+        <!-- Defines the error color. -->
+        <attr name="pl_errorColor" format="color|reference" />
+        <!-- Defines the success color. -->
+        <attr name="pl_successColor" format="color|reference"/>
+    </declare-styleable>
+
+</resources>

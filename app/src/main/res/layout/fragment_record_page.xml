@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_record_back"
+            android:layout_width="@dimen/toolbar_icon_size"
+            android:layout_height="@dimen/toolbar_icon_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:src="@mipmap/ic_back" />
+
+
+        <com.nickming.familyfinancing.widget.EarningAndExpendChangeBox
+            android:id="@+id/record_change_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+        </com.nickming.familyfinancing.widget.EarningAndExpendChangeBox>
+
+        <TextView
+            android:id="@+id/tv_record_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="备注"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_divider"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_record_type_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_record_type_icon_background"
+                android:layout_width="@dimen/record_type_item_icon_width"
+                android:layout_height="@dimen/record_type_item_icon_width"
+                android:layout_centerInParent="true"
+                android:src="@color/icon_amber" />
+
+            <ImageView
+                android:id="@+id/iv_record_type_icon"
+                android:layout_width="@dimen/toolbar_icon_size"
+                android:layout_height="@dimen/toolbar_icon_size"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/activity_horizontal_margin" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_record_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:inputType="numberDecimal"
+            android:text="0.00"
+            android:textColor="@color/primary_text_color"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/tv_record_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@id/rl_record_type_container"
+            android:text="吃喝"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/large_text_size" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_divider"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_record"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/view_divider"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="支付方式"
+        android:textColor="@color/secondary_text_color" />
+
+    <include layout="@layout/view_divider"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_record_use_type"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <com.nickming.familyfinancing.widget.FinancingNumberKeyBoardView
+        android:id="@+id/num_keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.nickming.familyfinancing.widget.FinancingNumberKeyBoardView>
+
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#ff243447</color>-->
+    <!--<color name="colorPrimaryDark">#ff1b2836</color>-->
+    <!--<color name="colorAccent">#8bc34a</color>-->
+
+    <color name="colorPrimary">#3F3F3F</color>
+    <color name="colorPrimaryDark">#3A3A3A</color>
+    <color name="colorAccent">#8A9599</color>
+
+    <color name="color3A3A3A">#3A3A3A</color>
+    <color name="color3F3F3F">#3F3F3F</color>
+    <color name="color8A9599">#8A9599</color>
+    <color name="color868686">#868686</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#3A3A3A</color>
+
+    <color name="gray">#8A9599</color>
+
+    <color name="orange">#ff9800</color>
+
+    <color name="primary_text_color">#ffffff</color>
+    <color name="secondary_text_color">#acacac</color>
+    <color name="light_primary_color">#c8e6c9</color>
+
+    <color name="icon_red">#e53935</color>
+    <color name="icon_pink">#e91e63</color>
+    <color name="icon_purple">#8e2460</color>
+    <color name="icon_blue">#1e88e5</color>
+    <color name="icon_cyan">#00838f</color>
+    <color name="icon_green">#388e3c</color>
+    <color name="icon_lim">#689f38</color>
+    <color name="icon_amber">#ffa000</color>
+    <color name="icon_orange">#ef6c00</color>
+    <color name="icon_deep_orange">#e64a19</color>
+    <color name="icon_brown">#5d4037</color>
+</resources>

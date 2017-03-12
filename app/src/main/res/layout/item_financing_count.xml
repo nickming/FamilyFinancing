@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="@color/secondary_text_color"
+        android:id="@+id/tv_financing_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="2011年23" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/secondary_text_color"
+            android:id="@+id/tv_financing_item_earning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收入:323" />
+
+        <TextView
+            android:textColor="@color/secondary_text_color"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/tv_financing_item_expend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支出:3232" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

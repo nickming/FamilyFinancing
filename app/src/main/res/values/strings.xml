@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FamilyFinancing</string>
+    <string name="close">close</string>
+    <string name="open">open</string>
+
+    <string name="icon_beautify">丽人</string>
+    <string name="icon_food">饮食</string>
+    <string name="icon_traffic">交通</string>
+    <string name="icon_clothes">服饰</string>
+    <string name="icon_books">书籍</string>
+    <string name="icon_red_pocket">红包</string>
+    <string name="icon_phone">话费</string>
+    <string name="icon_social">社交</string>
+    <string name="icon_pet">宠物</string>
+    <string name="icon_children">孩子</string>
+    <string name="icon_sport">运动</string>
+    <string name="icon_medical">医疗</string>
+    <string name="icon_others">其它</string>
+
+    <string name="icon_salary">薪水</string>
+    <string name="icon_part_time_job">兼职</string>
+    <string name="icon_invest">投资</string>
+    <string name="icon_bonus">奖金</string>
+
+    <string name="icon_cash">现金</string>
+    <string name="icon_bankcard">银行卡</string>
+    <string name="icon_wechat">微信支付</string>
+    <string name="icon_aplipay">支付宝</string>
+</resources>
